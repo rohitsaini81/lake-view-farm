@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOk Now</title>
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+<body>
+    <header>
+    <nav id="navbar">
+        <ul class="navlinks nav-list">
+            <!-- <div class="logo"><img src="src/tree.png" alt="Logo"></div> -->
+            <li  onclick="toggleMenu()"><a href="index.html" class="nav-a">Home</a></li>
+            <li  onclick="toggleMenu()"><a href="#about" class="nav-a">About</a></li>
+            <li  onclick="toggleMenu()"><a href="#services" class="nav-a">Services</a></li>
+            <li  onclick="toggleMenu()"><a href="#contacts" class="nav-a">Contact Us</a></li>
+      <!-- <li><input type="color" name="colorbox" id="color" class="tcolor"></li>      -->
+        </ul>
+
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="line l1"></div>
+        <div class="line l2"></div>
+        <div class="line l3"></div>
+      </div>
+    <div  id="home"  class="heading">
+    <h1>Welcome To Our Lake View Farm</h1>
+    <h3>Unwind in the embrace of nature's splendor at Lake View Farm. Click 'Book Now' to experience a truly blissful getaway.</h3>
+    </div>
+    <br>
+    
+    
+<p class="text-big">Ready to set sail and explore the wonders of the water world? Click 'Learn More' to discover our fleet of water boats, packed with adventure and endless possibilities on the waves</p>
+<div class="buttons">
+    <!-- <input type="text" name="search" class="btn" id="search"> -->
+    <button class="btn">Learn About Us</button>
+    <button class="btn"><a href="#contacts">Contact Us</a></button>
+    
+</div>
+    
+</header>
+
+
+
+
+
+
+
+
+
+  <section id="contact" class="contact-section">
+    <div class="contact">
+
+    <hr>
+    <div class="form">
+        
+            <h2>Feedback Here</h2>
+            <hr>
+    <form class="booking-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" name="check-in" required>
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" name="check-out" required>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" name="guests" min="1" required>
+        <textarea name="comments" placeholder="Additional Comments"></textarea>
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </section>
+  <footer id="contacts">
+    <h1>Contact Us</h1>
+    <hr>
+  <div class="information-box">
+                                
+                                <p>We Provide 24x7 Support</p>
+                                <div class="information-item_one d-flex mb-25">
+                                    <div class="icon">
+                                        <i class="flaticon-placeholder"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span class="sub-title mb-1">Location</span>
+                                        <h5>Lake View Farms Indri</h5>
+                                    </div>
+                                </div>
+                                <div class="information-item_one d-flex mb-25">
+                                    <div class="icon">
+                                        <i class="flaticon-email"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span class="sub-title mb-1">Email Address</span>
+                                        <h5><a href="mailto:info@lakeviewfarmindri.com"><span class="__cf_email__">info@lakeviewfarm.indri.com</span></a></h5>
+                                    </div>
+                                </div>
+                                <div class="information-item_one d-flex mb-25">
+                                    <div class="icon">
+                                        <i class="flaticon-phone-call"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span class="sub-title mb-1">Phone Number</span>
+                                        <h5><a href="tel:08130645474">(+91) 8199889776</a></h5>
+                                    </div>
+                                </div>
+                            </div></div>
+    <br>
+    <div class="footer-copyright border-top-white-1">
+        <div class="col-lg-12">
+            <div class="copyright-text text-center">
+                <p>© 2023 Lake View. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./nav.js"></script>
+</body>
+</html>

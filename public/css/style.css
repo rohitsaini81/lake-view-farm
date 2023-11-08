@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+body {
+  font-family:cursive;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #5EBD94, white);
+
+    /* background-color: #C79789    ; */
+    /* background: rgba(36, 52, 56, 0.7)url('https://png.pngtree.com/png-clipart/20190424/ourmid/pngtree-hand-drawn-cute-green-leaves-sticker-png-image_981678.jpg'); */
+    background-attachment: fixed;
+      /* background-size: 100% 100%; */
+      /* animation: splashAnimation 5s infinite alternate; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+    @keyframes splashAnimation {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 50px -50px; /* Adjust the values as needed */
+      }
+    }
+
+    .hamburger{position: fixed;
+        margin-top: 7px;
+        margin-left: 4%;
+        align-self: flex-end;
+        flex-direction: column;
+        z-index: 9999;
+        display: none;
+    }
+    .line{
+        margin-top: 4px;
+        background-color: black;
+        height: 5px;
+        width: 30px;
+        border-radius: 20%;
+    }
+    /*  */
+.hamburger.active .l1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .l2 {
+  opacity: 0;
+}
+
+.hamburger.active .l3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+    @media screen and (max-width: 768px) {
+      .h3{
+        display: none;
+      }
+      .hamburger{
+        display: flex;
+        align-self: flex-start;
+      }
+nav{
+  display: none;
+}
+      nav ul{
+        flex-direction: column;
+        height: 70%;
+        width: 50%;
+      }
+      nav ul li{
+        margin-top: 50%;
+      }
+    }
+
+
+
+    /* fotter?? */
+
+    .footer-copyright {
+      padding: 28px 0;
+      text-align: center;
+  }
+  .border-top-white-1 {
+      border-top: 1px solid rgba(255, 255, 255, 0.102);
+  }
